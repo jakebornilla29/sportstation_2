@@ -69,7 +69,7 @@ class Admin_controller extends CI_Controller {
 	function editing_location($id)
 	{
 		$edit_result = $this->item->edit_location($id);
-		$this->load->view('admin/[locations/edit_locations',['edit_result'=>$edit_result]);
+		$this->load->view('admin/locations/edit_locations',['edit_result'=>$edit_result]);
 	}
 
 	function updating_location()
